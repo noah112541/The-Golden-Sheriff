@@ -1,0 +1,1 @@
+cooidown = 0;
