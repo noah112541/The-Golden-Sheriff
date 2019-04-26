@@ -13,3 +13,17 @@ if (hit > 0) hit -= 0.05; else hit = 0;
 
 //Destroy if hp is less than or equal to 0
 if (hp <= 0) instance_destroy();
+
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
+/// @DnDHash : 621D25A8
+/// @DnDArgument : "var" "hp"
+/// @DnDArgument : "op" "3"
+if(hp <= 0)
+{
+	/// @DnDAction : YoYo Games.Instances.Destroy_Instance
+	/// @DnDVersion : 1
+	/// @DnDHash : 05093ECE
+	/// @DnDParent : 621D25A8
+	instance_destroy();
+}
