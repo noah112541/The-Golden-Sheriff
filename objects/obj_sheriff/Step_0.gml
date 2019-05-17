@@ -1,7 +1,7 @@
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 2CB92A47
-/// @DnDArgument : "code" "//this is the movement$(13_10)if (keyboard_check(ord("S")))y+=4;$(13_10)if (keyboard_check(ord("W")))y-=4;$(13_10)if (keyboard_check(ord("A")))x-=4;$(13_10)if (keyboard_check(ord("D")))x+=4;$(13_10)//Move in four directions when pressing arrow keys.$(13_10)if (keyboard_check(vk_left))	x-= spd;$(13_10)if (keyboard_check(vk_right))	x+= spd;$(13_10)if (keyboard_check(vk_up))		y-= spd;$(13_10)if (keyboard_check(vk_down))	y+= spd;$(13_10)$(13_10)//Shoot$(13_10)/*if(keyboard_key_release(vk_shift) || mouse_check_button_released(mb_left)){$(13_10)	//if(level == 1){$(13_10)		instance_create_layer(x - 7, y - 42, layer, obj_bullet);$(13_10)	//} else if(level == 2){$(13_10)		instance_create_layer(x - 7, y - 42, layer, obj_bullet);$(13_10)		instance_create_layer(x - 7, y - 42, layer, obj_bullet2);$(13_10)	//} else if(level == 3){$(13_10)		instance_create_layer(x - 7, y - 42, layer, obj_bullet);$(13_10)		instance_create_layer(x - 7, y - 42, layer, obj_bullet2);$(13_10)		instance_create_layer(x - 7, y - 42, layer, obj_bullet3);$(13_10)		instance_create_layer(x - 7, y - 42, layer, obj_bullet4);$(13_10)	}"
+/// @DnDArgument : "code" "//this is the movement$(13_10)if (keyboard_check(ord("S")))y+=4;$(13_10)if (keyboard_check(ord("W")))y-=4;$(13_10)if (keyboard_check(ord("A")))x-=4;$(13_10)if (keyboard_check(ord("D")))x+=4;$(13_10)//Move in four directions when pressing arrow keys.$(13_10)if (keyboard_check(vk_left))	x-= spd;$(13_10)if (keyboard_check(vk_right))	x+= spd;$(13_10)if (keyboard_check(vk_up))		y-= spd;$(13_10)if (keyboard_check(vk_down))	y+= spd;$(13_10)$(13_10)$(13_10)//Shoot$(13_10)/*if(keyboard_key_release(vk_shift) || mouse_check_button_released(mb_left)){$(13_10)	//if(level == 1){$(13_10)		instance_create_layer(x - 7, y - 42, layer, obj_bullet);$(13_10)	//} else if(level == 2){$(13_10)		instance_create_layer(x - 7, y - 42, layer, obj_bullet);$(13_10)		instance_create_layer(x - 7, y - 42, layer, obj_bullet2);$(13_10)	//} else if(level == 3){$(13_10)		instance_create_layer(x - 7, y - 42, layer, obj_bullet);$(13_10)		instance_create_layer(x - 7, y - 42, layer, obj_bullet2);$(13_10)		instance_create_layer(x - 7, y - 42, layer, obj_bullet3);$(13_10)		instance_create_layer(x - 7, y - 42, layer, obj_bullet4);$(13_10)	}"
 //this is the movement
 if (keyboard_check(ord("S")))y+=4;
 if (keyboard_check(ord("W")))y-=4;
@@ -12,6 +12,7 @@ if (keyboard_check(vk_left))	x-= spd;
 if (keyboard_check(vk_right))	x+= spd;
 if (keyboard_check(vk_up))		y-= spd;
 if (keyboard_check(vk_down))	y+= spd;
+
 
 //Shoot
 /*if(keyboard_key_release(vk_shift) || mouse_check_button_released(mb_left)){
